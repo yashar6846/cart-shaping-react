@@ -1,10 +1,15 @@
 import React from 'react'
 
+
 function App() {
   return (
-   <div className="p-4 w-60 mx-auto">
+   <div class="box-content h-32 w-32 p-4 border-4 ...">
      Menu
+     <div>
+       <button  bg-local text-current>click</button>
+     </div>
    </div>
+   
   );
 }
 
