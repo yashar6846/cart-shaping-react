@@ -1,15 +1,19 @@
-import React from 'react'
 
+import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [count , setCount] = useState(0)
   return (
-   <div class="box-content h-32 w-32 p-4 border-4 ...">
-     Menu
-     <div>
-       <button  bg-local text-current>click</button>
-     </div>
-   </div>
    
+    <div className="App">
+      <h3>{count}</h3>
+      <header>
+        <h4>yashar</h4>
+        <div></div>
+        <button onClick={() => setCount(count + 1)}>click{count}</button>
+      </header>
+    </div>
   );
 }
 
